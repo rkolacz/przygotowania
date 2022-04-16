@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/f051435000.js" crossorigin="anonymous"></script>
+    <title>Testowanie nowych rozwiązań</title>
+</head>
+
+<body>
+
+    <nav class="navi">
+        <ul class="logo">
+            <a href="./index.html">
+                <li class="logo__st">rkołacz</li>
+            </a>
+            <li class="logo__nd">przygotowania - JS</li>
+        </ul>
+        <ul class="menu">
+            <a href="#">
+                <li class="menu__el">angular</li>
+            </a>
+            <a href="#">
+                <li class="menu__el">react</li>
+            </a>
+            <a href="#">
+                <li class="menu__el">js</li>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="textbox">
+        <h1>wstęp do js</h1>
+        <h2>typy danych</h2>
+        <p>
+        <ul>
+            <li><a href=#string-anchor>string</a></li>
+            <li><a href=#number-anchor>number</a></li>
+            <li><a href=#boolean-anchor>boolean</a></li>
+            <li><a href=#object-anchor>object</a>
+                <ol>function</ol>
+                <ol>array</ol>
+                <ol>date</ol>
+                <ol>regexp - do uzupełneinia</ol>
+            </li>
+            <li>BigInt - do uzupełneinia</li>
+            <li>symbol - do uzupełneinia</li>
+            <li>null - do uzupełneinia</li>
+            <li>undefined - do uzupełneinia</li>
+        </ul>
+        </p>
+        <h2><a id="string-anchor">string</a></h2>
+        <p class="code"><span class="code--varaible">const</span> text = 'Ciąg znaków w apostrofach' <span
+                class="code--idclass">// zmienna stała z wartością
+                o typie string</span><br><br>
+            console.log(<span class="code--varaible">typeof</span> name) <span class="code--idclass">// wyświetli w
+                konsoli informację o typie danych</span>
+        </p>
+        <p>metody i własności na stringu - wszystkie na <a
+                href="https://developer.mozilla.org/pl/docs/Web/JavaScript/Reference/Global_Objects/String"
+                target="_blanc">MDN</a></p>
+        <p class="code"><span class="code--headincode">length - własność</span><br><br>console.log(text.length) <span
+                class="code--idclass">// własność, która wypisze w
+                konsoli sumę znaków w stringu w zmiennej text</span></p>
+        <p class="code"><span class="code--headincode">toUpperCase i toLowerCase -
+                metoda</span><br><br>console.log(text.<span class="code--varaible">toUpperCase()</span>) <span
+                class="code--idclass">// metoda musi zostać
+                wywołana przez ()</span><br><br>
+            <span class="code--varaible">const</span> newText = text.<span
+                class="code--varaible">toLowerCase()</span><br><br>console.log(newText) <span class="code--idclass">//
+                lepiej
+                stworzyć nową zmienną i dodać do niej metodę niz wywoływać motody konsolą</span>
+        </p>
+        <p class="code"><span class="code--headincode">charAt i slice -
+                metoda + dodawanie ich do siebie</span><br><br><span class="code--varaible">const</span>
+            username = 'rafał';<br><br>
+            <span class="code--varaible">const</span> newUsername = username.<span
+                class="code--varaible">charAt(0)</span>.toUpperCase() + username.<span
+                class="code--varaible">slice(1)</span>;<span class="code--idclass"> // metody można do siebie dodawać i
+                je ze sobą łączyć</span><br><br>
+            console.log(newUsername); <span class="code--idclass">// w konsoli pojawi sie wynik Rafał</span>
+        </p>
+
+        <h2><a id="number-anchor">number</a></h2>
+        <p class="code"><span class="code--varaible">const</span>
+            num1 = 1; // number zapisuje się poprostu wpisując liczbę<br><br><span class="code--varaible">const</span>
+            num2 = '1';<br><br><span class="code--varaible">const</span> addNums = num1 + num2 <span
+                class="code--idclass">// doda number num1 do string num2 i
+                stworzy z nich string 11</span><br><br>console.log(typeof addNums) <span class="code--idclass">//
+                potwierdzenie</span>
+        </p>
+        <p>metody i własności na number - wszystkie na <a
+                href="https://developer.mozilla.org/pl/docs/Web/JavaScript/Reference/Global_Objects/Number"
+                target="_blanc">MDN</a></p>
+        <p class="code"><span class="code--headincode">parseInt - metoda do zamiany string na
+                number</span><br><br>console.log(<span class="code--varaible">parseInt</span>(addNums);<span
+                class="code--idclass">// zamieni string na
+                number 11</span></p>
+        <p class="code"><span class="code--headincode">toFixed -
+                metoda do zaokrąglania liczb</span><br><br>
+            <span class="code--varaible">const</span> num3 = 1.234;<br><br>
+            <span class="code--varaible">const</span> newNum3 = num3.<span
+                class="code--varaible">toFixed(1)</span>;<br><br>
+            console.log(newNum3); <span class="code--idclass">// konsola wyświetli zaokrągląną liczbę do (x) po
+                przecinku</span>
+        </p>
+        <h2><a id="boolean-anchor">null i undefined</a></h2>
+        <p class="code"><span class="code--varaible">let</span> a <span class="code--idclass">// nieprzypisanie wartości
+                do zmiennej let da undefined</span><br><br><span class="code--varaible">let</span> b = null <span
+                class="code--idclass">// przypisanie wartości null do zmiennej zdefinniuje
+                ją</span><br><br>console.log(a, b);
+            <span class="code--idclass">// w konsoli pojawi się undefined i null</span>
+        </p>
+        <h2><a id="object-anchor">object</a></h2>
+        <p class="code"><span class="code--headincode">object</span><br><br>
+            <span class="code--varaible">const</span> obj = {<br>
+            &nbsp name: 'Rafal',<br>
+            &nbsp age: 30,<br>
+            &nbsp city: null,<br>
+            };
+        </p>
+        <p class="code"><span class="code--headincode">function - podtyp object</span><br><br>
+            <span class="code--varaible">function</span> x() {<br>
+            &nbsp console.log('console log w funkcji');<br>
+            }<br><br>
+
+            x(); <span class="code--idclass">// wywołanie funkcji - ()<br><br>
+        </p>
+        <p class="code"><span class="code--headincode">array - tablica</span><br><br>const colors = ['red', 'green',
+            'blue'];<br><br>console.log(colors) <span class="code--idclass">// wyświetli w konsoli tablicę z nazwami
+                kolorów</span></p>
+
+    </div>
+    <script src="./js/vtype.js"></script>
+</body>
+
+</html>
