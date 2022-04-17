@@ -1,3 +1,5 @@
+// js for vtype.html
+
 const text = 'Ciąg znaków w apostrofach';
 
 console.log(typeof text);
