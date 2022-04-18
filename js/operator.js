@@ -4,6 +4,7 @@ let x = 2;
 let y = 4;
 
 // operatory arytmetyczne
+console.log('operatory arytmetyczne');
 
 const add = x + y; // dodawanie wartości do siebie
 console.log(add);
@@ -26,6 +27,7 @@ const modulo = 10 % 3; // reszta z dzielenia - modulo podzieli 10 przez 3 i poka
 console.log(modulo);
 
 // operatory przypisania
+console.log('operatory przypisania');
 
 x = x + y; // zmienia zmienną x o wartości 2 na 2 + y(4)
 x += y; // wersja skrócona
@@ -39,3 +41,24 @@ x /= y;
 x %= y;
 
 console.log(x);
+
+// operatory porównania
+console.log('operatory porównania');
+
+console.log(10 == '10'); // równa zawartość - true
+console.log(10 === '10'); // równa zawartość i typ - false
+console.log(10 === 10);
+console.log('10' === '10'); // jedno i drugie true
+
+console.log(10 != '10'); // różna zawartość - false
+console.log(10 !== '10'); // różna zawartość i typ - true
+console.log(10 !== 10);
+console.log('10' !== '10'); // jedno i drugie false
+
+console.log(10 > 5); // większe niż
+console.log(10 < 5); // mniejsze niż
+console.log(10 <= 5); // większe lub równe niż
+console.log(10 >= 5); // mniejsze lub równe niż
+
+// operatory logiczne
+console.log('operatory logiczne');
