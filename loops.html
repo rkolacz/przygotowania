@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/f051435000.js" crossorigin="anonymous"></script>
+    <title>Testowanie nowych rozwiązań</title>
+</head>
+
+<body>
+
+    <nav class="navi">
+        <ul class="logo">
+            <a href="./index.html">
+                <li class="logo__st">rkołacz</li>
+            </a>
+            <li class="logo__nd">przygotowania - JS</li>
+        </ul>
+        <ul class="menu">
+            <a href="#">
+                <li class="menu__el">angular</li>
+            </a>
+            <a href="#">
+                <li class="menu__el">react</li>
+            </a>
+            <a href="#">
+                <li class="menu__el">js</li>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="textbox">
+        <h1>wstęp do js</h1>
+        <h2>pętle</h2>
+        <p>for</p>
+        <p class="code">
+            <span class="code--varaible">const</span> animals = ['fox', 'dog', 'cat', 'rat', 'bird', 'fish'];<br><br>
+
+            <span class="code--headincode">wzór pętli for</span><br>
+            <span class="code--loop">for</span> (<span class="code--varaible">let</span> i = 0; i < 10; i++) {<br>
+                &nbsp console.log(i);<br>
+                }<br><br>
+
+                <span class="code--headincode">zapis uniwersalny</span><br>
+                <span class="code--loop">for</span> (<span class="code--varaible">let</span> i = 0; i < animals.length;
+                    i++) {<br>
+                    &nbsp console.log(animals[i]);<br>
+                    }<br>
+                    <span class="code--idclass">// pętla for będzie interować po długości (length) tablicy animals
+                    </span>
+        </p>
+        <p>while || do ... while</p>
+        <p class="code">
+            <span class="code--varaible">let</span> i = 0;<br><br>
+            <span class="code--loop">while</span> (i < 5) {<br>
+                &nbsp console.log(i);<br>
+                &nbsp i++;<br>
+                }<br>
+                <span class="code--idclass">// pętla while będzie wykonywać się dopóki nie spełni się warunek i <
+                        5</span><br><br>
+
+                        <span class="code--varaible">let</span> j = 0;<br><br>
+                        <span class="code--loop">do</span> {<br>
+                        &nbsp j++;<br>
+                        &nbsp console.log(j);<br>
+                        } <span class="code--loop">while</span> (i < 2); </p>
+
+                            <p>fot ... of</p>
+                            <p class="code">
+                                <span class="code--varaible">const</span> numbers = [1, 2, 3, 4, 5, 6];<br><br>
+
+                                <span class="code--loop">for</span> (<span class="code--varaible">const</span> number
+                                <span class="code--loop">of</span>
+                                numbers) {<br>
+                                &nbsp console.log(number);<br>
+                                }<br>
+                                <span class="code--idclass">// pętla for ... of iteruje po tablicy</span>
+                            </p>
+
+
+    </div>
+    <script src="./js/loops.js"></script>
+</body>
+
+</html>

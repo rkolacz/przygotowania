@@ -57,3 +57,17 @@ switch (day) {
 	default:
 		console.log('weekend');
 } // po znalezieniu case kod się zatrzymuje, jak nie znajdzie żadnego wykonuje się default
+
+// operator warunkowy
+console.log('operator waunkowy');
+
+const x = 100;
+
+console.log(x > 20 ? `${x} > 20` : `${x} < 20`); // wartość ? (if) warunek TRUE : (else) FALSE
+
+// to co wyżej tylko w wersji z if i else
+if (x > 20) {
+	console.log(`${x} > 20`);
+} else {
+	console.log(`${x} < 20`);
+}
