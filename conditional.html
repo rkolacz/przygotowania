@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/f051435000.js" crossorigin="anonymous"></script>
+    <title>Testowanie nowych rozwiązań</title>
+</head>
+
+<body>
+
+    <nav class="navi">
+        <ul class="logo">
+            <a href="./index.html">
+                <li class="logo__st">rkołacz</li>
+            </a>
+            <li class="logo__nd">przygotowania - JS</li>
+        </ul>
+        <ul class="menu">
+            <a href="#">
+                <li class="menu__el">angular</li>
+            </a>
+            <a href="#">
+                <li class="menu__el">react</li>
+            </a>
+            <a href="#">
+                <li class="menu__el">js</li>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="textbox">
+        <h1>wstęp do js</h1>
+        <h2>instrukcje warunkowe</h2>
+        <p>if || else || else if</p>
+        <p class="code">
+            <span class="code--varaible">const</span> pass = '123qweasdzxc!';<br><br>
+
+            <span class="code--headincode">if</span><br>
+            <span class="code--loop">if</span> (pass.length >= 0) {<br>
+            &nbsp console.log(true); <br>
+            } <br>
+
+            <span class="code--idclass">// if sprawdza czy
+                długość zmiennej pass jest większa
+                lub równa 0<br>// jeżeli true pokaż w konsoli true<br>// jeżeli false to nic nie
+                wyświetlaj</span><br><br>
+
+
+            <span class="code--headincode">if || else</span><br>
+            <span class="code--loop">if</span> (pass.length > 10) { <br>
+            &nbsp console.log('hasło jest ponad 10 znakowe'); <br>
+            } <span class="code--loop">else</span> { <br>
+            &nbsp console.log('hasło jest krótsze niż 10 znaków');<br>
+            }<br>
+            <span class="code--idclass">
+                // if sprawdza czy długość zmiennej pas jest większa niż 10<br>
+                // jeśl true wyświetl clg<br>
+                // jeżeli false wykonaj else z clg</span><br><br>
+
+            <span class="code--headincode">if || else if || else</span><br>
+            <span class="code--varaible">const</span> specialSign = '!';<br><br>
+
+            <span class="code--loop">if</span> (pass.length > 10 && pass.includes(specialSign)) {<br>
+            &nbsp console.log(`hasło jest ponad 10 znakowe + znak specjalny ${specialSign}`);<br>
+            } <span class="code--loop">else if</span> (pass.length > 10) { <br>
+            &nbsp console.log('haslo jest ponad 10 znakowe');<br>
+            } <span class="code--loop">else</span> {<br>
+            &nbsp console.log('hasło jest za krótkie');<br>
+            }<br>
+            <span class="code--idclass">
+                // if sprawdza czy długość zmiennej pas jest większa niż 10 i czy ma w sobie stirng '!'<br>
+                // jeśl true wyświetl clg<br>
+                // jeżeli if wyżej == false wykonaj else z clg jeśli if == true<br>
+                // jeżeli if wyżej == false wykonaj else z clg</span>
+        </p>
+        <p>switch</p>
+        <p class="code">
+            <span class="code--headincode">switch</span><br><br>
+            <span class="code--varaible">let</span> day = '1'<br><br>
+            <span class="code--loop">switch</span> (day) {<br>
+            case '1':<br>
+            &nbsp console.log('1');<br>
+            &nbsp break;<br><br>
+
+            case '2':<br>
+            &nbsp console.log('2');<br>
+            &nbsp break;<br><br>
+
+            case '3':<br>
+            &nbsp console.log('3');<br>
+            &nbsp break;<br><br>
+
+            case '4':<br>
+            &nbsp console.log('4');<br>
+            &nbsp break;<br><br>
+
+            case '5':<br>
+            &nbsp console.log('5');<br>
+            &nbsp break;<br><br>
+
+            default:<br>
+            &nbsp console.log('weekend');<br>
+            }<br> <span class="code--idclass">// po znalezieniu case kod się zatrzymuje, jak nie znajdzie żadnego
+                wykonuje się default</span>
+        </p>
+
+    </div>
+    <script src="./js/conditional.js"></script>
+</body>
+
+</html>

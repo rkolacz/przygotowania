@@ -30,6 +30,7 @@
 	--violet-color: #e4d1f8;
 	--navy-color: #4974a5;
 	--light-ecru-color: #f5f5dc;
+	--orange-color: #f5c320;
 }
 
 body {
@@ -203,6 +204,11 @@ a:hover {
 .code--varaible {
 	font-style: italic;
 	color: var(--dark-turq-color);
+}
+
+.code--loop {
+	font-style: italic;
+	color: var(--orange-color);
 }
 
 .code--headincode {
