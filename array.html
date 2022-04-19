@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/f051435000.js" crossorigin="anonymous"></script>
+    <title>Testowanie nowych rozwiązań</title>
+</head>
+
+<body>
+
+    <nav class="navi">
+        <ul class="logo">
+            <a href="./index.html">
+                <li class="logo__st">rkołacz</li>
+            </a>
+            <li class="logo__nd">przygotowania - JS</li>
+        </ul>
+        <ul class="menu">
+            <a href="#">
+                <li class="menu__el">angular</li>
+            </a>
+            <a href="#">
+                <li class="menu__el">react</li>
+            </a>
+            <a href="#">
+                <li class="menu__el">js</li>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="textbox">
+        <h1>js</h1>
+        <h2>tablice</h2>
+        <p>metody</p>
+        <p>unshift i shift</p>
+        <p class="code">
+            <span class="code--varaible">const</span> numbers = [1, 2, 3, 4, 5, 6];<br>
+            console.log(numbers);<br><br>
+
+            <span class="code--headincode">shift</span><br>
+            numbers.<span class="code--headincode">shift</span>(100, 200); <span class="code--idclass">// dodaje
+                wartości
+                z () na początek tablicy<br></span>
+            console.log(numbers);<br><br>
+
+            <span class="code--headincode">unshift</span><br>
+            numbers.<span class="code--headincode">unshift</span>(); <span class="code--idclass">// usuwa wartość z
+                indeksu 0 z tablicy<br></span>
+            console.log(numbers);<br>
+        </p>
+        <p>push i pop</p>
+        <p class="code">
+            <span class="code--varaible">const</span> colors = ['blue', 'red', 'black'];<br>
+            console.log(colors);<br><br>
+
+            <span class="code--headincode">push</span><br>
+            colors.<span class="code--headincode">push</span>('green', 1500100900); <span class="code--idclass">//
+                dodaje
+                wartość z () na koniec tablicy</span><br>
+            console.log(colors);<br><br>
+
+            <span class="code--headincode">pop</span><br>
+            colors.<span class="code--headincode">pop</span>(); <span class="code--idclass">// usuwa wartość z
+                ostatniego indeksu tablicy</span><br>
+            console.log(colors);
+        </p>
+        <p>map</p>
+        <p class="code">
+            <span class="code--headincode">map - metoda niedestrukcyjna - tworzy nową tablicę zamiast ją
+                zmieniać</span><br><br>
+            function multiply(x) {<br>
+            &nbsp; return x * 2;<br>
+            }<br><br>
+
+            <span class="code--varaible">const</span> newNumbers = numbers.<span
+                class="code--headincode">map</span>(multiply); <span class="code--idclass">//
+                iteruje przez wszystkie indeksy tablicy i dodaje to co w funkcji</span><br>
+            console.log(newNumbers);
+        </p>
+        <p>concat</p>
+        <p class="code">
+            <span class="code--headincode">concat - dodaje do tablicy wartości z ()</span><br><br>
+            <span class="code--varaible">const</span> abc = ['a', 'b', 'c'];<br>
+            <span class="code--varaible">const</span> newAbc = abc.<span class="code--headincode">concat</span>(1, 2,
+            3, numbers, true, 'string'); <span class="code--idclass">// można dodać wszystko</span><br>
+            console.log(newAbc);
+        </p>
+        <p>spread i rest (...)</p>
+        <p class="code">
+            <span class="code--headincode">...</span><br><br>
+            <span class="code--varaible">const</span> drinks = ['napój 1', 'napój 2', 'napój 3'];<br>
+            <span class="code--varaible">const</span> meals = ['danie 1', 'danie 2', 'danie 3'];<br><br>
+
+            <span class="code--varaible">const</span> menu = [<span class="code--headincode">...</span>drinks, <span
+                class="code--headincode">...</span>meals]; <span class="code--idclass">// po dodaniu na początku
+                zmiennej ... wyciąga stringi z
+                tablicy - w tym przypadku tworzy przy okazji nową tablicę</span><br>
+            console.log(menu);
+        </p>
+
+    </div>
+    <script src="./js/array.js"></script>
+</body>
+
+</html>
