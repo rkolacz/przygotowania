@@ -57,3 +57,12 @@ const hello = (name = 'użytkowniku') => {
 
 hello(); // gdy wywoła się funkcja bez podania argumentów to pojawi się domyślny parametr z funkcji 'użytkowniku'
 hello('Rafał'); // jeżeli podamy argument przy wywołaniu funkcji to zastąpi on domyślny parametr
+
+// operator rest
+
+const numbers2 = (x, y, ...z) => {
+	// operator rest powoduje, że parametr z przyjmuje formę tablicy
+	console.log(x, y, z);
+};
+
+numbers2(1, 2, 3, 4, 5, 6, 7, 8, 9, 0); // jeżeli nie było by przed parametrem z ... (rest) to funkcja wylogowałaby tylko 3 pierwsze argumenty
