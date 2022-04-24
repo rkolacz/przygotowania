@@ -14,7 +14,7 @@
 
     <nav class="navi">
         <ul class="logo">
-            <a href="#">
+            <a href="./index.html">
                 <li class="logo__st">rkołacz</li>
             </a>
             <li class="logo__nd">przygotowania - JS</li>
@@ -36,22 +36,39 @@
         <h1>wstęp do js</h1>
         <h2>let i const, nazwy zmiennych, temple string</h2>
         <p>const</p>
-        <p class="code">const name = 'string' - <span class="code--idclass">zmienna (variable) stała</span><br><br>
-            console.log(name) - <span class="code--idclass">wyświetli się w konsoli</span></p>
+        <p class="code">
+            <span class="code--variable">const</span> name = 'string' <span class="code--idclass">// zmienna (variable)
+                stała</span><br><br>
+            console.log(name) <span class="code--idclass">// wyświetli się w konsoli</span>
+        </p>
         <p>let</p>
-        <p class="code">let age = 30 - <span class="code--idclass">zmienna (variable) której wartość można
-                zmieniać</span><br><br>
-            console.log(age) - <span class="code--idclass">wyświetli się w konsoli</span></p>
-        <p>let można stworzyć bez podania wartości np. <strong>let color</strong></p>
-        <p>const musi już mieć wartość np. <strong>const city = 'sosnowiec'</strong></p>
+        <p class="code">
+            <span class="code--variable">let</span> age = 30 <span class="code--idclass">// zmienna (variable), której
+                wartość można zmieniać</span><br><br>
+            console.log(age) <span class="code--idclass">// wyświetli się w konsoli</span>
+        </p>
+        <p>let można stworzyć bez podania wartości, const musi już mieć wartość</p>
+        <p class="code">
+            <span class="code--variable">let</span> color <span class="code--idclass">// nie musi mieć
+                wartości</span><br>
+            <span class="code--variable">const</span> city = 'Sosnowiec' <span class="code--idclass">// bez wartości
+                wyświetli błąd składni w konsoli</span>
+        </p>
+
         <p>nazwy zmiennych</p>
-        <p>- nazwy zmiennych zawsze po angielsku<br>- JS jest językiem case sensitive, czyli rozróżnia wielkość
-            liter<br>- zmiennych nie zaczyna się cyframi myślikami i kropkami<br>- nazwy zmiennych większe niż jeden
-            wyraz trzeba pisać notacją wielbłądzią</p>
+        <ul>
+            <li>nazwy zmiennych zawsze po angielsku</li>
+            <li>JS jest językiem case sensitive, czyli rozróżnia wielkość liter</li>
+            <li>zmiennych nie zaczyna się cyframi myślikami i kropkami</li>
+            <li>nazwy zmiennych większe niż jeden wyraz trzeba pisać notacją wielbłądzią</li>
+        </ul>
         <p>temple string - przy użyciu grawisów</p>
-        <p class="code">const name1 = 'Rafał'<br><br>
-            const born = 'Sosnowiec'<br><br>
-            console.log('Jestem ${name1} i urodziłem się w ${born}</p>
+        <p class="code">
+            <span class="code--variable">const</span> name1 = 'Rafał'<br>
+            <span class="code--variable">const</span> born = 'Sosnowiec'<br>
+            console.log('Jestem ${name1} i urodziłem się w ${born} <span class="code--idclass">// Jestem Rafał i
+                urodziłem się w Sosnowcu</span>
+        </p>
     </div>
     <script src="./js/index-1.js"></script>
 </body>
