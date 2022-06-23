@@ -17,26 +17,29 @@ const helloWord = function () {
 	console.log('wyświetl funkcje w zmiennej helloWord');
 };
 
-helloWord();
+helloWord(); // ta metoda tworzenia funkcji nie jest hoistingowana
 
 // funkcja z parametrami/arumentami
 
 function add(x, y) {
-	// (x, y) parametry
+	// (x, y) parametry - nazwa parametru jest dowolna
 	console.log(x + y);
 }
 
 add(2, 2); // (2, 2) argumenty
 
+// parametry podaje się podczas tworzenia funkcji
+// argumenty podaje się podczas wywołania funkcji
+
 // funkcja anonimowa
 
-const heading = document.querySelector('h1');
+// const heading = document.querySelector('h3');
 
-function test() {
-	console.log('kliknięte: ');
-}
+// function test2() {
+// 	console.log('kliknięte: ');
+// }
 
-heading.addEventListener('click', test);
+// heading.addEventListener('click', test2());
 
 // funkcja strzałkowa =>
 

@@ -37,7 +37,91 @@
         <h2>funkcje</h2>
         <p>function</p>
         <p class="code">
+            <span class="code--headincode">deklaracja funkcji</span><br><br>
+            <span class="code--variable">function</span> <span class="code--loop">test</span>() {<br>
+            console.log('wyświetl funkcje test');<br>
+            } <span class="code--idclass">// taka funkcja podlega hoistingowaniu (windowaniu)</span><br><br>
 
+            <span class="code--loop">test</span>(); <span class="code--idclass">// niezależnie gdzie będzie wywołana ta
+                funkcja zawsze się
+                wykona</span><br>
+        </p>
+        <p class="code">
+            <span class="code--headincode">wyrażenie funkcyjne</span><br><br>
+            console.log('wyrażenie funkcyjne');<br><br>
+
+            <span class="code--variable">const</span> <span class="code--loop">helloWord</span> = <span
+                class="code--variable">function</span> () {<br>
+            console.log('wyświetl funkcje w zmiennej helloWord');<br>
+            };<br><br>
+
+            <span class="code--loop">helloWord</span>(); <span class="code--idclass">// ta metoda tworzenia funkcji nie
+                jest hoistingowana</span><br>
+        </p>
+        <p class="code">
+            <span class="code--headincode">funkcja z parametrami/arumentami</span><br><br>
+
+            <span class="code--variable">function</span> <span class="code--loop">add</span>(x, y) {<br>
+            <span class="code--idclass">// (x, y) parametry - nazwa parametru jest dowolna</span><br>
+            console.log(x + y);<br>
+            }<br><br>
+
+            <span class="code--loop">add</span>(2, 2); // (2, 2) argumenty<br><br>
+
+            <span class="code--idclass">// <strong>parametry</strong> podaje się podczas <strong>tworzenia</strong>
+                funkcji</span><br>
+            <span class="code--idclass">// <strong>argumenty</strong> podaje się podczas <strong>wywołania</strong>
+                funkcji</span><br>
+        </p>
+        <!-- <p class="code"> DO POPRAWY
+            <span class="code--headincode">funkcja anonimowa</span><br><br>
+
+            <span class="code--variable">const</span> <span class="code--loop">heading</span> =
+            document.querySelector('h1');<br>
+
+            <span class="code--variable">function</span> test2() {<br>
+            console.log('kliknięte: ');<br>
+            }<br><br>
+
+            <span class="code--loop">heading</span>.addEventListener('click', test2);<br>
+        </p> -->
+        <p>funkcja strzałkowa</p>
+        <p class="code">
+            <span class="code--variable">const</span> <span class="code--loop">arrowFunction</span> = () => { <span
+                class="code--idclass">// tak wygląda funkcja strzałkowa</span><br>
+            };<br><br>
+            <span class="code--variable">const</span> <span class="code--loop">arrow1</span> = (name) => {<br>
+            console.log(`mam na imię ${name}`);<br>
+            };<br><br>
+            <span class="code--idclass">// fat arrow, arrow function nie potrzebuję nawiasów w parametrach ani nawiasów
+                klamrowych jeżeli jest jeden parametr w () i jeden element w {}
+                arrow1('Rafał');</span>
+            <br>
+        </p>
+
+        <p class="code">
+            <span class="code--headincode">domyślne parametry funkcji</span><br><br>
+            <span class="code--variable">const</span> <span class="code--loop">hello</span> = (name = 'użytkowniku') =>
+            {<br>
+            console.log(`Cześć, ${name}`);<br>
+            };<br><br>
+
+            <span class="code--loop">hello</span>(); <span class="code--idclass">// gdy wywoła się funkcja bez podania
+                argumentów to pojawi się domyślny parametr z funkcji 'użytkowniku'</span><br><br>
+            <span class="code--loop">hello</span>('Rafał'); <span class="code--idclass">// jeżeli podamy argument przy
+                wywołaniu funkcji to zastąpi on domyślny parametr</span>
+        </p>
+        <p class="code">
+            <span class="code--headincode">operator rest</span><br><br>
+
+            <span class="code--variable">const</span> <span class="code--loop">numbers2</span> = (x, y, ...z) => {<br>
+            <span class="code--idclass">// operator rest powoduje, że parametr z przyjmuje formę tablicy<br></span>
+            console.log(x, y, z);<br>
+            };<br><br>
+
+            <span class="code--loop">numbers2</span>(1, 2, 3, 4, 5, 6, 7, 8, 9, 0); <span class="code--idclass">//
+                jeżeli nie było by przed parametrem z ... (rest) to funkcja wylogowałaby tylko 3 pierwsze
+                argumenty</span>
         </p>
 
     </div>
