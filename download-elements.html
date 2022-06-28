@@ -36,15 +36,53 @@
         <h1>js</h1>
         <h2>pobieranie elementów</h2>
         <p>getElementBy</p>
-        <p class="code">
-        <ul class="code--idclass">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-        <span id="idtodownload"></span>
-        </p>
+        <div class="code">
+            <p>lista nienumerowana do pobierania</p>
+            <ul class="code--idclass">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </div>
+
+
+        <div class="code">getElementById<br><br>
+            console.log('getElementById');<br><br>
+
+            const test = document.getElementById('idtodownload'); // pobieranie elementu id z pliku html<br>
+            console.log(test);</div><br>
+
+        <div class="code">getElementsByTagName - używane przy 'żywych kolekcjach' - dodawanych elementów w DOMie a nie w
+            html<br><br>
+            console.log('getElementsByTagName');<br><br>
+
+            const test2 = document.getElementsByTagName('li');<br>
+            console.log(test2);</div>
+
+        <div class="code">getElementsByClassName - używane przy 'żywych kolekcjach' - dodawanych elementów w DOMie a nie
+            w html<br><br>
+            console.log('getElementsByClassName');<br><br>
+
+            const test3 = document.getElementsByClassName('code');<br>
+            console.log(test3);</div>
+
+        <div class="code">document.querySelector<br><br>
+            console.log('querySelector');<br><br>
+
+            const ulList = document.querySelector('ul.code--idclass'); // querySelector przeszukuje document i szuka ul
+            z klasą code-idclass<br>
+            console.log(ulList);<br><br>
+
+            const liFirstElement = document.querySelector('li'); // querySelector przeszukuje document i szuka
+            pierwszego li<br>
+            console.log(liFirstElement);<br><br>
+
+            // w () w querySelector można pisać metody z css takie jak nth-child<br><br>
+
+            console.log('querySelectorAll');<br>
+            const liAllElements = document.querySelectorAll('li'); // All szuka w document wszystkich li<br>
+            console.log(liAllElements);</div>
 
     </div>
     <script src="./js/download_elements.js"></script>

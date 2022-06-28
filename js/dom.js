@@ -1,4 +1,4 @@
-// plik js do strony functions.html
+// plik js do strony dom.html
 
 // delkaracja funkcji
 console.log('delkaracja funkcji');
