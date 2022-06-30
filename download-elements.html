@@ -35,54 +35,71 @@
     <div class="textbox">
         <h1>js</h1>
         <h2>pobieranie elementów</h2>
-        <p>getElementBy</p>
+        <h3>getElementBy</h3>
         <div class="code">
             <p>lista nienumerowana do pobierania</p>
-            <ul class="code--idclass">
+            <ul id="idtodownload" class="code--idclass">
                 <li>1</li>
                 <li>2</li>
                 <li>3</li>
                 <li>4</li>
+                <li class="code">5 - li z klasą code</li>
             </ul>
         </div>
 
 
-        <div class="code">getElementById<br><br>
-            console.log('getElementById');<br><br>
+        <div class="code"><span class="code--headincode">getElementById</span><br><br>
 
-            const test = document.getElementById('idtodownload'); // pobieranie elementu id z pliku html<br>
-            console.log(test);</div><br>
+            <span class="code--variable">const</span> <span class="code--loop">test</span> =
+            document.getElementById('idtodownload'); <span class="code--idclass">// pobieranie elementu id z pliku
+                html</span><br><br>
+            console.log(<span class="code--loop">test</span>);
+        </div>
 
-        <div class="code">getElementsByTagName - używane przy 'żywych kolekcjach' - dodawanych elementów w DOMie a nie w
-            html<br><br>
-            console.log('getElementsByTagName');<br><br>
+        <div class="code"><span class="code--headincode">getElementsByTagName</span><br><span class="code--idclass">//
+                używane przy 'żywych kolekcjach' -
+                dodawanych elementów w DOMie a nie w html</span><br><br>
 
-            const test2 = document.getElementsByTagName('li');<br>
-            console.log(test2);</div>
+            <span class="code--variable">const</span> <span class="code--loop">test2</span> =
+            document.getElementsByTagName('li'); <span class="code--idclass">// pobierz wszystkie elementy li ze
+                strony</span><br><br>
+            console.log(<span class="code--loop">test2</span>);
+        </div>
 
-        <div class="code">getElementsByClassName - używane przy 'żywych kolekcjach' - dodawanych elementów w DOMie a nie
-            w html<br><br>
-            console.log('getElementsByClassName');<br><br>
+        <div class="code">
+            <span class="code--headincode">getElementsByClassName</span><br><span class="code--idclass">// używane przy
+                'żywych kolekcjach' - dodawanych elementów w DOMie a nie
+                w html</span><br><br>
 
-            const test3 = document.getElementsByClassName('code');<br>
-            console.log(test3);</div>
+            <span class="code--variable">const</span> <span class="code--loop">test3</span> =
+            document.getElementsByClassName('code');<span class="code--idclass">// pobierz wszystkie
+                elementy code ze
+                strony</span><br><br>
+            console.log(<span class="code--loop">test3</span>);
+        </div>
+        <h3>querySelector</h3>
+        <div class="code">
+            <span class="code--headincode">document.querySelector</span><br><br>
 
-        <div class="code">document.querySelector<br><br>
-            console.log('querySelector');<br><br>
+            <span class="code--variable">const</span> <span class="code--loop">ulList</span> =
+            document.querySelector('ul.code--idclass'); <span class="code--idclass">// querySelector przeszukuje
+                document i szuka ul
+                z klasą code-idclass</span><br><br>
+            console.log(<span class="code--loop">ulList</span>);<br><br>
 
-            const ulList = document.querySelector('ul.code--idclass'); // querySelector przeszukuje document i szuka ul
-            z klasą code-idclass<br>
-            console.log(ulList);<br><br>
+            <span class="code--variable">const</span> <span class="code--loop">liFirstElement</span> =
+            document.querySelector('li'); <span class="code--idclass">// querySelector przeszukuje document i szuka
+                pierwszego li</span><br><br>
+            console.log(<span class="code--loop">liFirstElement</span>);<br><br>
 
-            const liFirstElement = document.querySelector('li'); // querySelector przeszukuje document i szuka
-            pierwszego li<br>
-            console.log(liFirstElement);<br><br>
+            <span class="code--idclass">// w () w querySelector można pisać metody z css takie jak
+                nth-child</span><br><br>
 
-            // w () w querySelector można pisać metody z css takie jak nth-child<br><br>
-
-            console.log('querySelectorAll');<br>
-            const liAllElements = document.querySelectorAll('li'); // All szuka w document wszystkich li<br>
-            console.log(liAllElements);</div>
+            <span class="code--variable">const</span> <span class="code--loop">liAllElements</span> =
+            document.querySelectorAll('li'); <span class="code--idclass">// All szuka w document wszystkich
+                li</span><br><br>
+            console.log(<span class="code--loop">liAllElements</span>);
+        </div>
 
     </div>
     <script src="./js/download_elements.js"></script>

@@ -134,6 +134,7 @@ button {
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
+	/* z-index: 1; */
 }
 
 .inputbox {
@@ -190,6 +191,7 @@ a:hover {
 	font-size: 0.8em;
 	text-align: left;
 	padding: 20px;
+	margin-bottom: 20px;
 	color: var(--violet-color);
 	background-color: var(--dark-color);
 	max-width: 1000px;
